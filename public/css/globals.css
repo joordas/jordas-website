@@ -1,5 +1,10 @@
 :root {
   --violet: #5f4b8b;
+  --violet-light: #ecdeff;
+  --violet-darker: #560099;
+  --violet-accent: #8e00fe;
+  --violet-accent: #B04DFF;
+
   --font-playfair: "Playfair Display", -apple-system, serif;
   --font-raleway: "Raleway", -apple-system, BlinkMacSystemFont, Roboto,
     Helvetica Neue, sans-serif;
@@ -20,3 +25,19 @@ a {
 * {
   /* outline: 1px solid magenta !important; */
 }
+
+body {
+  background: linear-gradient(180deg, #F4E8FF 0%, rgba(255, 250, 255, 0) 100%);
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/*
+    @media (max-width: 992px) {
+
+    }
+    @media (max-width: 768px) {
+      
+    }
+/

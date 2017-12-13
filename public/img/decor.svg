@@ -1,0 +1,30 @@
+<svg width="1440" height="1020" viewBox="0 0 1440 1020" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<g id="Canvas" transform="translate(1337 525)">
+<g id="decor">
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="translate(-1338 -445)" fill="url(#paint0_linear)"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="translate(-1339.5 -524.5)" fill="url(#paint1_linear)"/>
+<use xlink:href="#path1_fill" transform="translate(-1339.5 -524.5)" fill="url(#paint2_linear)" fill-opacity="0.7"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-2.61448e-05 965.5 -1543.77 -3.61838e-05 771.886 -25.5)">
+<stop offset="0.0704197" stop-color="#EFE3FA" stop-opacity="0.39"/>
+<stop offset="1" stop-color="#BA75FF"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-796.5 663.5 -858.035 -1030.03 1911.02 880.015)">
+<stop offset="0" stop-color="#C4BAFF" stop-opacity="0.75"/>
+<stop offset="1" stop-color="#FFFFFF" stop-opacity="0.5"/>
+</linearGradient>
+<linearGradient id="paint2_linear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(433 487.5 -630.433 559.954 1326.72 250.523)">
+<stop offset="0.0418458" stop-color="#FFFFFF" stop-opacity="0"/>
+<stop offset="1" stop-color="#BFD1FF"/>
+</linearGradient>
+<path id="path0_fill" d="M 2.61847 0C 2.61847 747.609 974.467 937.284 1481.24 939.971L 1503 939.971C 1495.85 940.01 1488.59 940.01 1481.24 939.971L 0 939.971L 2.61847 0Z"/>
+<path id="path1_fill" d="M 0 1117C 481.5 1084 1444.5 814.4 1444.5 0L 1444.5 1117L 0 1117Z"/>
+</defs>
+</svg>

@@ -1,0 +1,39 @@
+<svg width="1920" height="3048" viewBox="0 0 1920 3048" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>three</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-2948 -2951)">
+<g id="three">
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="translate(146 2613)" fill="url(#paint0_linear)"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="translate(1888 2945)" fill="url(#paint1_linear)"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path2_fill" transform="translate(2922 2885)" fill="url(#paint2_linear)"/>
+<use xlink:href="#path2_fill" transform="translate(2922 2885)" fill="url(#paint3_linear)" fill-opacity="0.7"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-2247.38 3266.44 -4869.78 -2380.56 7348.27 1373.84)">
+<stop offset="0.11646" stop-color="#91B7FF" stop-opacity="0"/>
+<stop offset="1" stop-color="#6398FF"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-5.18752e-05 3246.73 -3063.08 -0.000121677 1531.54 -85.75)">
+<stop offset="0.0704197" stop-color="#EFE3FA" stop-opacity="0.39"/>
+<stop offset="1" stop-color="#BA75FF"/>
+</linearGradient>
+<linearGradient id="paint2_linear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-1228.52 3308 -1323.44 -5135.4 2947.56 4387.47)">
+<stop offset="0" stop-color="#C4BAFF" stop-opacity="0.75"/>
+<stop offset="1" stop-color="#FFFFFF" stop-opacity="0.5"/>
+</linearGradient>
+<linearGradient id="paint3_linear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(667.86 2430.52 -972.381 2791.75 2046.33 1249.03)">
+<stop offset="0.0418458" stop-color="#FFFFFF" stop-opacity="0"/>
+<stop offset="1" stop-color="#BFD1FF"/>
+</linearGradient>
+<path id="path0_fill" d="M 2750.92 312.912C 3738.68 230.427 5572.73 589.498 5006.84 2685.66C 4370.87 5041.41 5412.11 1290.89 2634.96 301.686C 862.066 129.569 -1676.86 -138.721 1547.63 85.4927C 1963.37 114.401 2323.22 190.647 2634.96 301.686C 2674.01 305.477 2712.68 309.221 2750.92 312.912Z"/>
+<path id="path1_fill" d="M 1382.89 511.21C 2055.39 1386.54 2960.84 2067.22 2981.81 71.5654C 2956.82 2476.33 1672.55 3133.97 1027.27 3160.98L 1027.27 3079.15C -833.211 3102.84 252.067 1036.26 1027.27 0C 1142.52 151.131 1264.63 324.862 1382.89 511.21Z"/>
+<path id="path2_fill" d="M 1941.43 3045.66C 3180.57 -1659.35 0 3049.68 0 0L 0 2962.19C 0 4767.86 702.284 7750.66 1941.43 3045.66Z"/>
+</defs>
+</svg>

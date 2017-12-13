@@ -1,0 +1,31 @@
+<svg width="1440" height="2994" viewBox="0 0 1440 2994" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>bigone</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(3081 -2036)">
+<g id="bigone">
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="translate(-4115 2036)" fill="url(#paint0_linear)"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="translate(-3097.48 2044.54)" fill="url(#paint1_linear)"/>
+<use xlink:href="#path1_fill" transform="translate(-3097.48 2044.54)" fill="url(#paint2_linear)" fill-opacity="0.7"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-5.18752e-05 3246.73 -3063.08 -0.000121677 1531.54 -85.75)">
+<stop offset="0.0704197" stop-color="#EFE3FA" stop-opacity="0.39"/>
+<stop offset="1" stop-color="#BA75FF"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-1226.03 3302.93 -1320.75 -5127.53 2941.57 4380.75)">
+<stop offset="0" stop-color="#C4BAFF" stop-opacity="0.75"/>
+<stop offset="1" stop-color="#FFFFFF" stop-opacity="0.5"/>
+</linearGradient>
+<linearGradient id="paint2_linear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(666.504 2426.79 -970.407 2787.47 2042.18 1247.11)">
+<stop offset="0.0418458" stop-color="#FFFFFF" stop-opacity="0"/>
+<stop offset="1" stop-color="#BFD1FF"/>
+</linearGradient>
+<path id="path0_fill" d="M 1382.89 511.21C 2055.39 1386.54 2960.84 2067.22 2981.81 71.5654C 2956.82 2476.33 1672.55 3133.97 1027.27 3160.98L 1027.27 3079.15C -833.211 3102.84 252.067 1036.26 1027.27 0C 1142.52 151.131 1264.63 324.862 1382.89 511.21Z"/>
+<path id="path1_fill" d="M 1937.48 3040.99C 3174.11 -1656.8 0 3045.01 0 0L 0 2957.65C 0 4760.55 700.857 7738.78 1937.48 3040.99Z"/>
+</defs>
+</svg>
