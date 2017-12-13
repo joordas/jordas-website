@@ -1,0 +1,22 @@
+:root {
+  --violet: #5f4b8b;
+  --font-playfair: "Playfair Display", -apple-system, serif;
+  --font-raleway: "Raleway", -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
+  --font-montserrat: "Montserrat", -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* uncomment line below for an easier UI debuggin session ;) */
+* {
+  /* outline: 1px solid magenta !important; */
+}
