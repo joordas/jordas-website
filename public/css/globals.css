@@ -2,8 +2,10 @@
   --violet: #5f4b8b;
   --violet-light: #ecdeff;
   --violet-darker: #560099;
-  --violet-accent: #8e00fe;
-  --violet-accent: #B04DFF;
+  --violet-accent: #8e00fe; /*  ??? */ 
+  --violet-accent: #B04DFF; /* ?? */ 
+  --violet-accent: #AA00FF;
+  --black: #333;
 
   --font-playfair: "Playfair Display", -apple-system, serif;
   --font-raleway: "Raleway", -apple-system, BlinkMacSystemFont, Roboto,
@@ -31,6 +33,16 @@ body {
   background-repeat: no-repeat;
   box-sizing: border-box;
   overflow-x: hidden;
+}
+
+::-moz-selection {
+  background-color: var(--violet);
+  color: var(--violet-light);
+
+}
+*::selection {
+  background-color: var(--violet);
+  color: var(--violet-light);
 }
 
 /*

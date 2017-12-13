@@ -9,6 +9,12 @@ const Wrapper = s.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
+  a {
+    transition: .2s all ease-in;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
 `;
 
 const SocialMedia = props => (

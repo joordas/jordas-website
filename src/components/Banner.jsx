@@ -81,7 +81,7 @@ const Introduction = s.div`
   font-family: var(--font-montserrat);
   font-weight: 500;
   font-size: 1.5rem;
-  color: #333;
+  color: var(--black);
   // max-width: 600px;
   padding: 40px 50px;
   margin-left: -90px;
@@ -123,7 +123,7 @@ const Menu = s.nav`
     font-weight: 700;
     font-size: 1.5rem;
     color: var(--violet);
-    background-color: white;
+    background-color: #F5F5FF;
     border: 2px solid var(--violet);
     border-radius: 2px;
     padding: 8px 10px;
@@ -140,7 +140,7 @@ const Menu = s.nav`
   }
   a.cta {
     color: white;
-    background-color: var(--violet);
+    background-color: var(--violet-accent);
     border:none;
     padding: 10px 12px;
   }
@@ -177,7 +177,7 @@ const Banner = () => (
         </p>
       </Introduction>
       <Menu>
-        <a href="#">What can I do</a>
+        <a href="#">What can I do?</a>
         <a className="cta" href="#">
           Hire me
         </a>
