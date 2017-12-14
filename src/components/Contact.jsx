@@ -6,7 +6,9 @@ import SendIcon from "react-icons/lib/fa/paper-plane";
 const Container = s.section`
   font-family: var(--font-montserrat);
   margin-bottom: 100px;
+
   h2 {
+    padding: 20px;
     color: var(--violet);  
     font-size: 2rem;
   }
@@ -59,6 +61,8 @@ const Form = s.form`
     display: block;
     width: 100%;
     padding: 0 12px;
+    box-shadow: none;
+    border-radius: 2px;
   }
   
   textarea {
@@ -89,6 +93,55 @@ const SendButton = s.button`
   `;
 
 class Contact extends Component {
+  state = {
+    name: "",
+    email: "",
+    messageContent: "",
+    formSent: false
+  };
+
+  handleNameChange = e => {
+    const name = e.target.value;
+    this.setState({ name });
+  };
+
+  handleEmailChange = e => {
+    const email = e.target.value;
+    this.setState({ email });
+  };
+
+  handleMessageChange = e => {
+    const messageContent = e.target.value;
+    this.setState({ messageContent });
+  };
+
+  handleSubmit = submitEvent => {
+    submitEvent.preventDefault();
+    const form = document.getElementById("contact-form");
+    const { name, email, messageContent } = this.state;
+    const body = JSON.stringify({ name, email, messageContent });
+    // form.reset();
+    fetch("/contact", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json"
+      },
+      body
+    })
+      .then(() =>
+        this.setState({
+          name: "",
+          email: "",
+          messageContent: "",
+          formSent: true
+        })
+      )
+      .catch(error => {
+        console.error(error);
+      });
+  };
+
   resizeLabel = e => {
     const label = document.querySelector(`label[for=${e.target.id}]`);
     const isFilled = e.target.value !== "";
@@ -107,7 +160,7 @@ class Contact extends Component {
       <Container>
         <h2>Let's Talk</h2>
         <FormWrapper>
-          <Form>
+          <Form onSubmit={this.handleSubmit}>
             <p>
               Write me a message! I’ll probably get back to you on the same day.
             </p>
@@ -122,6 +175,8 @@ class Contact extends Component {
               required
               name="name"
               type="text"
+              value={this.state.name}
+              onChange={this.handleNameChange}
             />
 
             <label className="label-input" htmlFor="email">
@@ -134,12 +189,23 @@ class Contact extends Component {
               required
               name="email"
               type="email"
+              value={this.state.email}
+              onChange={this.handleEmailChange}
             />
 
             <label htmlFor="message">message</label>
-            <textarea name="message" id="message" cols="30" rows="10" />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              value={this.state.messageContent}
+              onChange={this.handleMessageChange}
+              required
+              minlength="5"
+            />
 
-            <SendButton>
+            <SendButton type="submit">
               <SendIcon
                 style={{ marginLeft: "-10px" }}
                 color="#B04DFF"

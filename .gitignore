@@ -9,4 +9,4 @@ publick/*bundle*
 .sass-cache/
 .env
 *.env
-ecosystem.config.jsw
+ecosystem.config.js

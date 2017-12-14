@@ -9,7 +9,7 @@ const Container = s.section`
   margin-bottom: 50px;
   display: grid;
   grid-template-columns: 1fr 3fr;
-  grid-gap: 150px;
+  grid-gap: 120px;
   @media (max-width: 992px) {
     grid-gap: 80px
     margin-top: 60px;

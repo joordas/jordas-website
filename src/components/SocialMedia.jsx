@@ -19,13 +19,13 @@ const Wrapper = s.div`
 
 const SocialMedia = props => (
   <Wrapper>
-    <a href="#">
+    <a target="_blank" href="https://github.com/joordas">
       <GithubIcon color={props.color} size={props.size} />
     </a>
-    <a href="#">
+    <a target="_blank" href="https://www.linkedin.com/in/jordan-gomes/">
       <LinkedinIcon color={props.color} size={props.size} />
     </a>
-    <a href="#">
+    <a target="_blank" href="https://www.facebook.com/joordas">
       <FacebookIcon color={props.color} size={props.size} />
     </a>
   </Wrapper>
