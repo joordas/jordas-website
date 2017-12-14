@@ -23,24 +23,25 @@ const Logo = s.img`
 const Nav = s.nav`
   display: none;
   @media (max-width: 768px) {
-    display: block;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
   }
   white-space:nowrap;
 
   a{
     font-family: var(--font-montserrat);
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 0.875rem;
     color: var(--violet);
     background-color: white;
-    border: 2px solid var(--violet);
+    border: 1px solid var(--violet);
     border-radius: 2px;
     padding: 8px 10px;
-    margin-left: 40px;
     transition: all .2s ease-in;
-    @media (max-width: 1366px) {
-      font-size: 1rem;
-    }
+    margin-left: 10px;
+    margin-top: 10px;
     &:hover {
       transform: translateY(-2px);
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -48,9 +49,8 @@ const Nav = s.nav`
   }
   a.cta {
     color: white;
-    background-color: var(--violet);
-    border:none;
-    padding: 10px 12px;
+    background-color: var(--violet-accent);
+    border-color: var(--violet-accent);
   }
 `;
 

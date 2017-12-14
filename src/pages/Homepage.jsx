@@ -4,6 +4,7 @@ import s from "styled-components";
 import Navbar from "../components/Navbar";
 import Banner from "../components/Banner";
 import Skills from "../components/Skills";
+import Contact from "../components/Contact";
 
 const Wrapper = s.div`
   padding: 0 100px;
@@ -26,6 +27,7 @@ class Homepage extends Component {
         <Navbar />
         <Banner />
         <Skills />
+        <Contact />
       </Wrapper>
     );
   }

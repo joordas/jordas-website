@@ -124,7 +124,7 @@ const Menu = s.nav`
     font-size: 1.5rem;
     color: var(--violet);
     background-color: #F5F5FF;
-    border: 2px solid var(--violet);
+    border: 1px solid var(--violet);
     border-radius: 2px;
     padding: 8px 10px;
     margin-left: 40px;
@@ -141,8 +141,7 @@ const Menu = s.nav`
   a.cta {
     color: white;
     background-color: var(--violet-accent);
-    border:none;
-    padding: 10px 12px;
+    border-color: var(--violet-accent);
   }
 `;
 

@@ -5,6 +5,7 @@
   --violet-accent: #8e00fe; /*  ??? */ 
   --violet-accent: #B04DFF; /* ?? */ 
   --violet-accent: #AA00FF;
+  --violet-accent: #11e971;
   --black: #333;
 
   --font-playfair: "Playfair Display", -apple-system, serif;
@@ -29,10 +30,17 @@ a {
 }
 
 body {
+
   background: linear-gradient(180deg, #F4E8FF 0%, rgba(255, 250, 255, 0) 100%);
+  background-color: #e6e2ff;
   background-repeat: no-repeat;
   box-sizing: border-box;
   overflow-x: hidden;
+}
+
+
+img {
+  overflow-y: hidden;
 }
 
 ::-moz-selection {
