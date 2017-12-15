@@ -37,12 +37,12 @@ const Violet = s.div`
   }  
   
   h1,h2 {
-    color: var(--violet-light);
     font-family: var(--font-playfair);
     font-weight: 400;
     letter-spacing: -0.05em;
   }
   h1 {
+    color: white;
     font-size: 7.875rem;
     line-height: .5rem;
     margin-right: 70px;
@@ -54,6 +54,7 @@ const Violet = s.div`
     }
   }
   h2 {
+    color: var(--violet-light);
     font-size: 4.5rem;
     @media (max-width: 992px) {
       font-size: 3.25rem;

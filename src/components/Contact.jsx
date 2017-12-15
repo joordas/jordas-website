@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import s from "styled-components";
 
 import SendIcon from "react-icons/lib/fa/paper-plane";
+import Check from "react-icons/lib/md/check";
 
 const Container = s.section`
   font-family: var(--font-montserrat);
@@ -43,6 +44,7 @@ const Form = s.form`
     }
     &.label-move {
       transform: translateY(-1rem);
+      padding-top: 1rem;
       // margin-bottom: 1rem;
       font-size: .9rem;
     }
@@ -90,6 +92,17 @@ const SendButton = s.button`
     bottom: -50px;
     left: calc(50% - 50px);
     outline : none;
+    transition: 0.5s all ease-out;
+    &.sent {
+      background-color: #5fff9b;
+    }
+    &:hover {
+      box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.13), 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    }
+    &:active {
+      background-color: #5fff9b;
+      box-shadow: 0 2px 3px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    }
   `;
 
 class Contact extends Component {
@@ -156,6 +169,15 @@ class Contact extends Component {
   };
 
   render() {
+    const Send = this.state.formSent ? (
+      <SendButton disabled className="sent" type="submit">
+        <Check color="#B04DFF" size={40} />
+      </SendButton>
+    ) : (
+      <SendButton type="submit">
+        <SendIcon style={{ marginLeft: "-10px" }} color="#B04DFF" size={40} />
+      </SendButton>
+    );
     return (
       <Container>
         <h2>Let's Talk</h2>
@@ -205,13 +227,7 @@ class Contact extends Component {
               minlength="5"
             />
 
-            <SendButton type="submit">
-              <SendIcon
-                style={{ marginLeft: "-10px" }}
-                color="#B04DFF"
-                size={40}
-              />
-            </SendButton>
+            {Send}
           </Form>
         </FormWrapper>
       </Container>

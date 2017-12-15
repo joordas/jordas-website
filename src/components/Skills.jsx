@@ -80,7 +80,7 @@ const SkillPanel = s.div`
       &:after {
         content: '';
         display: block;
-        background-color: var(--violet-accent);
+        background-color: var(--violet-light);
         height: .5rem;
         position: absolute;
         bottom: .5rem;

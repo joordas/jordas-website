@@ -9,7 +9,7 @@ const Illustration = s.img`
   position: absolute;
   width: 100vw;
   // height: 100vh;
-  max-height: 220vh;
+  // max-height: 220vh;
   z-index: -1;
   overflow-y: hidden;
 `;
