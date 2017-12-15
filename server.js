@@ -12,6 +12,8 @@ var path = require("path");
 var mailer = require("express-mailer");
 var bodyParser = require("body-parser");
 
+var PORT = 8080;
+
 app.use("/public", express.static("public")); //serve public folder with /public prefix
 
 app.set("views", __dirname + "/public/views");
@@ -66,7 +68,7 @@ app.get("/", function(req, res) {
   res.sendFile(path.join(__dirname, "/index.html"));
 });
 
-app.listen(3000, function() {
+app.listen(PORT, function() {
   console.log(process.env.MAILER_EMAIL);
-  console.log("Magic is happening on port 3000!");
+  console.log(`listening on port ${PORT}`);
 });
