@@ -48,7 +48,7 @@ const Form = s.form`
     }
   }
   input {
-    caret-color: var(--violet-accent);
+    caret-color: white;
     color: white;
     font-family: var(--font-montserrat);
     font-size: 1.625rem;

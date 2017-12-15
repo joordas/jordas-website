@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server",
     "server": "webpack -p && node server.js",
-    "prodtest": "pm2 start server.js"
+    "prodtest": "pm2 start ecosystem.config.js"
   },
   "author": "",
   "license": "ISC",
