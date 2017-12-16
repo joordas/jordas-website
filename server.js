@@ -12,7 +12,7 @@ var path = require("path");
 var mailer = require("express-mailer");
 var bodyParser = require("body-parser");
 
-var PORT = 8080;
+var PORT = 3000;
 
 app.use("/public", express.static("public")); //serve public folder with /public prefix
 
