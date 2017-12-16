@@ -171,7 +171,7 @@ class Contact extends Component {
 
   render() {
     let Send =
-      this.state.formSent === "sucess" ? (
+      this.state.formSent === "success" ? (
         <SendButton disabled className="sent" type="submit">
           <Check color="#B04DFF" size={40} />
         </SendButton>
