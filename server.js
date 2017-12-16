@@ -49,7 +49,8 @@ app.post("/contact", function(req, res) {
       to: "contact@3gir.com",
       subject: "mail from jordas.me",
       messageContent: req.body.messageContent,
-      from: req.body.email
+      from: req.body.email,
+      name: req.body.name
     },
     function(err) {
       if (err) {
