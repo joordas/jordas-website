@@ -177,7 +177,7 @@ class Contact extends Component {
         </SendButton>
       ) : (
         <SendButton type="submit">
-          <SendIcon style={{ marginLeft: "-10px" }} color="#5fff9b" size={40} />
+          <SendIcon style={{ marginLeft: "-10px" }} color="#B04DFF" size={40} />
         </SendButton>
       );
 
