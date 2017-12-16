@@ -110,7 +110,7 @@ class Contact extends Component {
     name: "",
     email: "",
     messageContent: "",
-    formSent: false
+    formSent: null
   };
 
   handleNameChange = e => {
@@ -133,7 +133,7 @@ class Contact extends Component {
     const form = document.getElementById("contact-form");
     const { name, email, messageContent } = this.state;
     const body = JSON.stringify({ name, email, messageContent });
-    // form.reset();
+
     fetch("/contact", {
       method: "POST",
       headers: {
@@ -147,11 +147,12 @@ class Contact extends Component {
           name: "",
           email: "",
           messageContent: "",
-          formSent: true
+          formSent: "success"
         })
       )
       .catch(error => {
         console.error(error);
+        this.setState({ formSent: "error" });
       });
   };
 
@@ -169,20 +170,29 @@ class Contact extends Component {
   };
 
   render() {
-    const Send = this.state.formSent ? (
-      <SendButton disabled className="sent" type="submit">
-        <Check color="#B04DFF" size={40} />
-      </SendButton>
-    ) : (
-      <SendButton type="submit">
-        <SendIcon style={{ marginLeft: "-10px" }} color="#B04DFF" size={40} />
-      </SendButton>
-    );
+    let Send =
+      this.state.formSent === "sucess" ? (
+        <SendButton disabled className="sent" type="submit">
+          <Check color="#B04DFF" size={40} />
+        </SendButton>
+      ) : (
+        <SendButton disabled style={{ backgroundColor: "red" }} type="submit">
+          :(
+        </SendButton>
+      );
+
+    this.state.formSent === "error"
+      ? (Send = (
+          <SendButton type="submit">
+            <SendIcon style={{ marginLeft: "-10px" }} color="red" size={40} />
+          </SendButton>
+        ))
+      : null;
     return (
       <Container id="contact">
         <h2>Let's Talk</h2>
         <FormWrapper>
-          <Form onSubmit={this.handleSubmit}>
+          <Form onSubmit={this.handleSubmit} id="contact-form">
             <p>
               Write me a message! I’ll probably get back to you on the same day.
             </p>
