@@ -1,5 +1,6 @@
-import React from "react";
+import React, { Component } from "react";
 import s from "styled-components";
+import scroll from "scroll-to-element";
 
 import SocialMedia from "./SocialMedia";
 
@@ -42,8 +43,8 @@ const Violet = s.div`
     letter-spacing: -0.05em;
   }
   h1 {
-    color: white;
     font-size: 7.875rem;
+    color: white;
     line-height: .5rem;
     margin-right: 70px;
     @media (max-width: 992px) {
@@ -156,37 +157,52 @@ const SocialMediaContainer = s.div`
   }
 `;
 
-const Banner = () => (
-  <Container>
-    <Violet>
-      <h1>
-        I make <p>Websites</p>
-      </h1>
-      <h2>Among other things</h2>
-    </Violet>
-    <RightSide>
-      <Introduction>
-        <p>
-          Hi, I’m <span>Jordan Gomes</span>, a web developer/designer,
-          passionate across the stack.
-        </p>
-        <p>
-          I love to <strong>design</strong>, <strong>prototype</strong>,{" "}
-          <strong>code</strong>, <strong>test</strong> and <strong>look</strong>{" "}
-          at websites.
-        </p>
-      </Introduction>
-      <Menu>
-        <a href="#">What can I do?</a>
-        <a className="cta" href="#">
-          Hire me
-        </a>
-      </Menu>
-      <SocialMediaContainer>
-        <SocialMedia size={69} color="#5f4b8b" />
-      </SocialMediaContainer>
-    </RightSide>
-  </Container>
-);
+class Banner extends Component {
+  render() {
+    const scrollOptions = {
+      offset: -100,
+      // ease: "ease-in",
+      duration: 1500
+    };
+    return (
+      <Container>
+        <Violet>
+          <h1>
+            I make <p>Websites</p>
+          </h1>
+          <h2>Among other things</h2>
+        </Violet>
+        <RightSide>
+          <Introduction>
+            <p>
+              Hi, I’m <span>Jordan Gomes</span>, a web developer/designer,
+              passionate across the stack.
+            </p>
+            <p>
+              I love to <strong>design</strong>, <strong>prototype</strong>,{" "}
+              <strong>code</strong>, <strong>test</strong> and{" "}
+              <strong>look</strong> at websites.
+            </p>
+          </Introduction>
+          <Menu>
+            <a onClick={() => scroll("#skills", scrollOptions)} href="#">
+              What can I do?
+            </a>
+            <a
+              onClick={() => scroll("#contact", scrollOptions)}
+              className="cta"
+              href="#"
+            >
+              Hire me
+            </a>
+          </Menu>
+          <SocialMediaContainer>
+            <SocialMedia size={69} color="#5f4b8b" />
+          </SocialMediaContainer>
+        </RightSide>
+      </Container>
+    );
+  }
+}
 
 export default Banner;

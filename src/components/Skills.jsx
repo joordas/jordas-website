@@ -154,7 +154,7 @@ class Skills extends Component {
 
   render() {
     return (
-      <Container>
+      <Container id="skills">
         <SelectSelector
           ref={select => (this.select = select)}
           onChange={this.handleSelectChange}

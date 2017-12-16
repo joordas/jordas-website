@@ -179,7 +179,7 @@ class Contact extends Component {
       </SendButton>
     );
     return (
-      <Container>
+      <Container id="contact">
         <h2>Let's Talk</h2>
         <FormWrapper>
           <Form onSubmit={this.handleSubmit}>

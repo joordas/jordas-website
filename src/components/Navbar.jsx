@@ -1,5 +1,6 @@
-import React from "react";
+import React, { Component } from "react";
 import s from "styled-components";
+import scroll from "scroll-to-element";
 
 const Container = s.div`
   padding-top: 60px;
@@ -54,16 +55,31 @@ const Nav = s.nav`
   }
 `;
 
-const Navbar = () => (
-  <Container>
-    <Logo src="/public/img/logo.svg" />
-    <Nav>
-      <a href="#">What can I do</a>
-      <a className="cta" href="#">
-        Hire me
-      </a>
-    </Nav>
-  </Container>
-);
+class Navbar extends Component {
+  render() {
+    const scrollOptions = {
+      offset: -100,
+      // ease: "ease-in",
+      duration: 1500
+    };
+    return (
+      <Container>
+        <Logo src="/public/img/logo.svg" />
+        <Nav>
+          <a onClick={() => scroll("#skills", scrollOptions)} href="#">
+            What can I do
+          </a>
+          <a
+            onClick={() => scroll("#contact", scrollOptions)}
+            className="cta"
+            href="#"
+          >
+            Hire me
+          </a>
+        </Nav>
+      </Container>
+    );
+  }
+}
 
 export default Navbar;
