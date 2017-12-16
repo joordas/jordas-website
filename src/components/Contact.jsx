@@ -176,15 +176,15 @@ class Contact extends Component {
           <Check color="#B04DFF" size={40} />
         </SendButton>
       ) : (
-        <SendButton disabled style={{ backgroundColor: "red" }} type="submit">
-          :(
+        <SendButton type="submit">
+          <SendIcon style={{ marginLeft: "-10px" }} color="#5fff9b" size={40} />
         </SendButton>
       );
 
     this.state.formSent === "error"
       ? (Send = (
-          <SendButton type="submit">
-            <SendIcon style={{ marginLeft: "-10px" }} color="red" size={40} />
+          <SendButton disabled style={{ backgroundColor: "red" }} type="submit">
+            :(
           </SendButton>
         ))
       : null;
